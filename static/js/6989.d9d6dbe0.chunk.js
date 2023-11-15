@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_epochlabs=self.webpackChunk_epochlabs||[]).push([[6989],{56989:function(n,e,s){s.r(e),s.d(e,{default:function(){return u}});var r=s(6907),t=s(74007),c=s(80184);function u(){return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(r.ql,{children:(0,c.jsx)("title",{children:" Foundations: Grid"})}),(0,c.jsx)(t.zG,{})]})}}}]);
+//# sourceMappingURL=6989.d9d6dbe0.chunk.js.map

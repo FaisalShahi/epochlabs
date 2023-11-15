@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_epochlabs=self.webpackChunk_epochlabs||[]).push([[1934],{91934:function(n,e,s){s.r(e),s.d(e,{default:function(){return u}});var c=s(6907),t=s(74007),r=s(80184);function u(){return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(c.ql,{children:(0,r.jsx)("title",{children:" Foundations: Icons"})}),(0,r.jsx)(t.zQ,{})]})}}}]);
+//# sourceMappingURL=1934.675fce56.chunk.js.map

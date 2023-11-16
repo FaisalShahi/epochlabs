@@ -12,7 +12,6 @@ const FaqsPage = lazy(() => import('src/pages/faqs'));
 const AboutPage = lazy(() => import('src/pages/about-us'));
 const ContactPage = lazy(() => import('src/pages/contact-us'));
 const MaintenancePage = lazy(() => import('src/pages/maintenance'));
-
 const ComingSoonPage = lazy(() => import('src/pages/coming-soon'));
 
 // ----------------------------------------------------------------------
@@ -30,7 +29,8 @@ export const mainRoutes = [
       { path: 'about-us', element: <AboutPage /> },
       { path: 'contact-us', element: <ContactPage /> },
       { path: 'faqs', element: <FaqsPage /> },
-      { path: 'maintenance', element: <MaintenancePage /> },
+      { path: 'terms', element: <ComingSoonPage /> },
+      { path: 'privacy-policy', element: <ComingSoonPage /> },
     ],
   },
 ];

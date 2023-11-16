@@ -21,17 +21,32 @@ import Iconify from 'src/components/iconify';
 // ----------------------------------------------------------------------
 
 export default function ComingSoonView() {
-  const { days, hours, minutes, seconds } = useCountdownDate(new Date('07/07/2024 21:30'));
+  const { days, hours, minutes, seconds } = useCountdownDate(new Date('01/01/2024 21:30'));
 
   return (
     <>
-      <Typography variant="h3" sx={{ mb: 2 }}>
-        Coming Soon!
-      </Typography>
 
-      <Typography sx={{ color: 'text.secondary' }}>
-        We are currently working hard on this page!
-      </Typography>
+      <Stack
+        direction="row"
+        justifyContent="center"
+        divider={<Box sx={{ mx: { xs: 1, sm: 2.5 } }}>:</Box>}
+        sx={{ typography: 'h2' }}
+      >
+        <Typography variant="h3" sx={{ mt: 2 }}>
+          Coming Soon!
+        </Typography>
+      </Stack>
+
+      <Stack
+        direction="row"
+        justifyContent="center"
+        divider={<Box sx={{ mx: { xs: 1, sm: 2.5 } }}>:</Box>}
+        sx={{ typography: 'h2' }}
+      >
+        <Typography sx={{ color: 'text.secondary' }}>
+          We are currently working hard on this page!
+        </Typography>
+      </Stack>
 
       <ComingSoonIllustration sx={{ my: 10, height: 240 }} />
 
@@ -50,7 +65,7 @@ export default function ComingSoonView() {
         <TimeBlock label="Seconds" value={seconds} />
       </Stack>
 
-      <TextField
+      {/* <TextField
         fullWidth
         placeholder="Enter your email"
         InputProps={{
@@ -76,9 +91,9 @@ export default function ComingSoonView() {
           },
         }}
         sx={{ my: 5 }}
-      />
+      /> */}
 
-      <Stack spacing={1} alignItems="center" justifyContent="center" direction="row">
+      {/* <Stack spacing={1} alignItems="center" justifyContent="center" direction="row">
         {_socials.map((social) => (
           <IconButton
             key={social.name}
@@ -92,7 +107,7 @@ export default function ComingSoonView() {
             <Iconify icon={social.icon} />
           </IconButton>
         ))}
-      </Stack>
+      </Stack> */}
     </>
   );
 }

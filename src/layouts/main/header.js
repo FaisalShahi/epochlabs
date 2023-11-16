@@ -24,7 +24,7 @@ import { navConfig } from './config-navigation';
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
 //
-import { SettingsButton, HeaderShadow, LoginButton } from '../_common';
+import { SettingsButton, HeaderShadow } from '../_common';
 
 // ----------------------------------------------------------------------
 
@@ -66,19 +66,19 @@ export default function Header() {
                 right: -16,
               },
             }}
-            // badgeContent={
-            //   <Link
-            //     href={paths.changelog}
-            //     target="_blank"
-            //     rel="noopener"
-            //     underline="none"
-            //     sx={{ ml: 1 }}
-            //   >
-            //     <Label color="info" sx={{ textTransform: 'unset', height: 22, px: 0.5 }}>
-            //       v5.3.0
-            //     </Label>
-            //   </Link>
-            // }
+          // badgeContent={
+          //   <Link
+          //     href={paths.changelog}
+          //     target="_blank"
+          //     rel="noopener"
+          //     underline="none"
+          //     sx={{ ml: 1 }}
+          //   >
+          //     <Label color="info" sx={{ textTransform: 'unset', height: 22, px: 0.5 }}>
+          //       v5.3.0
+          //     </Label>
+          //   </Link>
+          // }
           >
             <Logo />
           </Badge>

@@ -32,8 +32,8 @@ const LINKS = [
   {
     headline: 'Legal',
     children: [
-      { name: 'Terms and Condition', href: paths.maintenance },
-      { name: 'Privacy Policy', href: paths.maintenance },
+      { name: 'Terms and Condition', href: paths.terms },
+      { name: 'Privacy Policy', href: paths.privacyPolicy },
     ],
   },
   {
@@ -49,7 +49,7 @@ export default function Footer() {
 
   const isHome = pathname === '/';
 
-  const isMaintenance = pathname === '/maintenance';
+  const isTermsPrivacy = pathname === '/terms' || pathname === '/privacy-policy';
 
   const simpleFooter = (
     <Box
@@ -170,11 +170,6 @@ export default function Footer() {
     </Box>
   );
 
-  // return isHome ? simpleFooter : mainFooter;
+  return isTermsPrivacy ? simpleFooter : mainFooter;
 
-  if (isMaintenance) {
-    return simpleFooter
-  }
-
-  return mainFooter;
 }

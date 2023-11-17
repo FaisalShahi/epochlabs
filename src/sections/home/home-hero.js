@@ -51,7 +51,7 @@ const StyledWrapper = styled('div')(({ theme }) => ({
 
 const StyledTextGradient = styled(m.h1)(({ theme }) => ({
   ...textGradient(
-    `300deg, ${theme.palette.primary.main} 0%, ${theme.palette.warning.main} 25%, ${theme.palette.primary.main} 50%, ${theme.palette.warning.main} 75%, ${theme.palette.primary.main} 100%`
+    `300deg, ${theme.palette.primary.main} 0%, ${theme.palette.info.main} 25%, ${theme.palette.primary.main} 50%, ${theme.palette.info.main} 75%, ${theme.palette.primary.main} 100%`
   ),
   padding: 0,
   marginTop: 8,

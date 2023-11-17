@@ -38,26 +38,21 @@ import ProgressBar from 'src/components/progress-bar';
 import MotionLazy from 'src/components/animate/motion-lazy';
 import SnackbarProvider from 'src/components/snackbar/snackbar-provider';
 import { SettingsProvider, SettingsDrawer } from 'src/components/settings';
-// sections
-// auth
-// import { AuthProvider, AuthConsumer } from 'src/auth/context/auth0';
-// import { AuthProvider, AuthConsumer } from 'src/auth/context/amplify';
-// import { AuthProvider, AuthConsumer } from 'src/auth/context/firebase';
 
 // ----------------------------------------------------------------------
 
 export default function App() {
   const charAt = `
 
-  ░░░    ░░░
-  ▒▒▒▒  ▒▒▒▒
-  ▒▒ ▒▒▒▒ ▒▒
-  ▓▓  ▓▓  ▓▓
-  ██      ██
+  ░░░░░░░░  ░░
+  ░░        ░░
+  ░░░░░░░   ░░
+  ░░        ░░
+  ░░░░░░░░  ░░░░░░░
 
   `;
 
-  console.info(`%c${charAt}`, 'color: #5BE49B');
+  console.info(`%c${charAt}`, 'color: #2065D1');
 
   useScrollToTop();
 

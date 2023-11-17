@@ -19,20 +19,20 @@ export default function ContactForm() {
 
     console.log(form.target, 'form');
 
-    // emailjs.sendForm(
-    //   'service_gxryz59',
-    //   'template_7zosvcr',
-    //   form.current,
-    //   'qjgxXqsdCHp309QAe')
-    //   .then((result) => {
-    //     console.log(result.text);
-    //     console.log('result.text');
-    //     enqueueSnackbar('Request submitted!', { variant: 'default' });
-    //     e.target.reset()
-    //   })
-    //   .catch((error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs.sendForm(
+      'service_gxryz59',
+      'template_7zosvcr',
+      form.current,
+      'qjgxXqsdCHp309QAe')
+      .then((result) => {
+        console.log(result.text);
+        console.log('result.text');
+        enqueueSnackbar('Request submitted!', { variant: 'default' });
+        e.target.reset()
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   };
 
   return (
@@ -62,7 +62,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <TextField fullWidth label="Enter your message here." multiline rows={4} name="message" required/>
+            <TextField fullWidth label="Enter your message here." multiline rows={4} name="message" required />
           </div>
 
           <div>
